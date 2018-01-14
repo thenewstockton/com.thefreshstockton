@@ -1,0 +1,20 @@
+/*
+//style.css
+//Phillip Ko
+//July 30, 2016
+//Javascript 268 Project3 GoogleMap API Implementation
+//implement: https://developers.google.com/maps/documentation/javascript/reference
+//Homework 3 : User 1. enters two addresses or 2. points two locations on the map: Direction1 to Direction2. 
+//select travel mode, route selection
+*/
+html, body 
+{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#map
+{
+	width: 800px;
+	height: 600px;
+}

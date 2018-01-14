@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset=utf-8 />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>A Team Music</title>
+			<script>
+				var percent = 1.0;
+				function volumeDown()
+				{
+					percent = 1.0;
+					one.volume = percent;
+					setTimeout(goDown, 16000);
+				}
+				
+				function goDown()
+				{
+						console.log(percent);
+						if (percent > 0.05) 
+						{
+								var one = document.getElementById("one");
+								percent -= 0.01
+								one.volume = percent;
+								setTimeout(goDown, 100);
+						}
+						
+				}
+			</script>
+	</head>
+	<body>
+
+		<h3>01戲說台灣</h3>
+		<audio controls onplay="volumeDown()" id="one">
+			<source src="01.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+		</audio>
+		
+		<h3>02屋頂</h3>
+		<audio controls>
+		  <source src="02.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+			
+		<h3>03一支小雨傘</h3>
+		<audio controls>
+		  <source src="03.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+			
+		<h3>04心事誰人知</h3>
+		<audio controls>
+			<source src="04.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+
+		<h3>05戲說台灣</h3>
+		<audio controls>
+			  <source src="05.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+		</audio>
+		
+		<h3>Support Phone</h3>
+		<audio controls>
+			<source src="s01.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+	</body>
+</html>

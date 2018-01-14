@@ -1,0 +1,17 @@
+//style.css
+//Phillip Ko
+//July 23, 2016
+//Javascript 268 Project2 GoogleMap API 
+//implement: https://developers.google.com/maps/documentation/javascript/reference
+//Homework2: Use this data.  Mark these stores and present their name and address.
+html, body 
+{
+	height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#map 
+{
+	width: 1200px;
+    height: 800px;
+}

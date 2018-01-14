@@ -1,0 +1,25 @@
+<!--
+//index.html
+//Phillip Ko
+//July 23, 2016
+//Javascript 268 Project2 GoogleMap API 
+//implement: https://developers.google.com/maps/documentation/javascript/reference
+//Homework2: Use this data.  Mark these stores and present their name and address.
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Lottery bidding stations</title>
+    	<link href="style.css" type="text/css" rel="stylesheet" />
+    	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsjNyX6hFE0NEuHNw5pic-2_Fvw5Gprxo&callback=load" async defer></script>
+    	<script src="loadMap.js" type="text/javascript"></script> 
+    	<meta name="viewport" content="initial-scale=1.0">
+    	<meta charset="utf-8">
+  	</head>
+  	<body>
+		<h1>Google Map API Implementation</h1>
+		<button onClick="clicked()">Reload</button>
+    	<div id="map"></div>
+  	</body>
+</html>

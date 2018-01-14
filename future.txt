@@ -1,0 +1,43 @@
+<!-- Work Experience -->
+		<h1>Work Experience</h1>
+			<dl>
+				<dt> <a href="http://www.google.com">GOOGLE</a> </dt>
+				<dd> <strong>2000-2005</strong>: Software Engineering. Programmed in C, C++, Java, and Python.</dd>
+				<dt> <a href="http://www.cisco.com">CISCO</a> </dt>
+				<dd> <strong>2006-present</strong>: Computer Networks. Needed to manage the entire network system. </dd>
+			</dl>
+		
+		<!-- Education -->
+		<h1>Education</h1>
+		
+			<table>
+					<tr>
+					<th>University</th>
+					<th>Degree</th>
+					<th>GPA</th>
+					<th>Honor</th>
+					<th>Time range</th>
+				</tr>
+				<tr>
+					<td> <a href="http://www.pacific.edu">University of the Pacific</a> </td>
+					<td> &nbsp; &nbsp; &nbsp; &nbsp; <em>B.S.</em> in <strong>Computer Engineering</strong> and <strong>Computer Science</strong>
+							&nbsp; &nbsp; &nbsp; &nbsp; </td>
+					<td> 3.53 &nbsp; &nbsp; </td>  <td> &nbsp; &nbsp; <em>cum laude</em>   &nbsp; &nbsp; </td>    <td> <strong>1990-1995</strong> </td>
+				</tr>
+				<tr>
+					<td> <a href="http://www.ucdavis.edu/">University of California, Davis</a> </td> <td> &nbsp; &nbsp; &nbsp; &nbsp; 
+								<em>M.S.</em> in <strong>Computer Science</strong> &nbsp; &nbsp; &nbsp; &nbsp; </td>
+					<td> 3.81 &nbsp; &nbsp; </td>   <td>&nbsp; &nbsp; <em>magna cum laude</em>   &nbsp; &nbsp; </td>   <td> <strong>1995-1997</strong> </td>
+				</tr>
+			</table>
+		
+		<!-- References -->
+		<h1>References</h1>
+			<ol>
+				<li> Fictional1, <a href="http://www.usc.edu/">University of Southern California</a> ,
+					<a href="mailto:fictional1@u.usc.edu">fictional1@u.usc.edu</a>				 </li>
+				<li> Fictional2, <a href="http://www.scu.edu/">Santa Clara University</a>, 
+					<a href="mailto:fictional2@u.scu.edu">fictional2@u.scu.edu</a> </li>
+				<li> Fictional3, <a href="http://www.washington.edu/">University of Washington</a>, 
+					<a href="mailto:fictional3@u.uw.edu">fictional3@u.uw.edu</a> </li>
+			</ol>	

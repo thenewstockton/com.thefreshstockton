@@ -1,0 +1,65 @@
+<!--
+//loadMap.js
+//Phillip Ko
+//July 30, 2016
+//Javascript 268 Project3 GoogleMap API Implementation
+//implement: https://developers.google.com/maps/documentation/javascript/reference
+//Homework 3 : User 1. enters two addresses or 2. points two locations on the map: Direction1 to Direction2. 
+//select travel mode, route selection
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple Map</title>
+		<meta name="viewport" content="initial-scale=1.0">
+		<meta charset="utf-8">
+		
+    	<link href="style.css" type="text/css" rel="stylesheet" />
+    	<script src="loadMap.js" type="text/javascript"></script> 
+    	<script src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyDsjNyX6hFE0NEuHNw5pic-2_Fvw5Gprxo&callback=initMap"  async defer></script>
+	</head>
+	<body>
+		<h1>More Google Map API Implementation</h1>
+			<!--   Two modes: enter anddress or pick points  -->
+			<span style = "font-size: 120%" >Mode:</span> <select id = "mode" onchange = modeChanged()>
+ 				<option value="mode1" selected="selected">Enter two Addresses</option>
+  				<option value="mode2">Pick two Points</option>
+			</select>
+			 <br><br>
+			 <!--  Travel mode: driving, transit, walking   -->
+			 <span style = "font-size: 120%" >Travel Mode:</span> <select id = "travelMode" onchange = travelModeChanged()>
+ 				<option value="travelMode1" selected="selected">DRIVING</option>
+  				<option value="travelMode2">TRANSIT</option>
+  				<option value="travelMode3">WALKING</option>
+			</select>
+			 <br><br>
+			 <!--  User enters two addresses   -->
+			 <h2>Enter two Addresses</h2>
+			Starting Point: <input type="text" name="startingPoint" value="Taipei, Taiwan" id = "input1" ><br>
+			Destination: <input type="text" name="destination" value="Taoyuan, Taiwan" id = "input2" ><br>
+  			<input type="submit" value="Submit" onclick="clicked()" id = "Submit">
+
+			<br><br>
+			<!--  User picks two points   -->
+			 <h2>Pick two Points</h2>
+			<select id = "startDestination" onchange = SorD()>
+ 				<option value="start" selected="selected">Starting Point</option>
+  				<option value="destination">Destination</option>
+			</select>
+			<button onClick="clicked2()" id = "Submit2">Submit</button> 
+			<br><br>
+			
+			<!--  User picks a route   -->
+			 <h2>Route Selection</h2>
+			<span style = "font-size: 120%" >Choose a route:</span>
+			<select id = "route" onchange = routeSelected()>
+ 				<option value="Route1" selected="selected">Route 1</option>
+  				<option value="Route2">Route 2</option>
+				<option value="Route3">Route 3</option>
+			</select>
+			<br><br>
+			
+    <div id="map"></div>
+  </body>
+</html>

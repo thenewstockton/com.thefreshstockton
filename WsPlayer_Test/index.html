@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>RTSP and WebRTC playback in iOS Safari browser via Websocket - Flashphoner VoW Player minimal
+			configuration</title>
+		<style>
+			
+			.big-btn {
+				width: 90px;
+				height: 40px;
+			}
+		</style>
+		<script>
+			//init connect disconnect pause resume changeQuality reconnect   
+			//var ip = "10.12.2.206";
+			var ip = "video.com";
+			var latencyThreshold = 3000;
+			var stream = "101";
+		</script>
+		<script type="text/javascript" src="./js/jquery-1.12.0.js"></script>
+		<script type="text/javascript" src="./js/jquery-ui.js"></script>
+		<script type="text/javascript" src="./js/jquery.websocket.js"></script>
+		<script type="text/javascript" src="./js/jquery.json.js"></script>
+		<script type="text/javascript" src="./js/utils.js"></script>
+		<script type="text/javascript" src="./js/Flashphoner.js"></script>
+		<script type="text/javascript" src="./js/WSPlayer.js"></script>
+		<!--<script src="../../../dependencies/bootstrap/js/bootstrap.min.js"></script>-->
+		<script type="text/javascript" src="./js/wsPlayer1.js"></script>
+		<script>
+			var stuff = 
+			{
+				initOnLoad: initOnLoad,
+				connect: connect,
+				pause: pause,
+				resume: resume,
+				reconnect: r,
+				disconnect: disconnect
+			}
+			
+		// 	window.setInterval(function(){
+		// 	var buffer = window["video"];
+		// 	var canvas = document.getElementById('cvs'),
+		//     ctx = canvas.getContext('2d'); 
+		// 	canvas.width = 450;
+		// 	canvas.height = 250;  
+		// 	var idata = ctx.createImageData(450, 250);  
+		// 	idata.data.set(buffer); 
+		// 	ctx.putImageData(idata, 0, 0); 
+		// }, 100);
+		</script>
+
+	</head>
+	<body>
+		
+		<canvas id="videoCanvas" style="border: 1px solid width: 1px; height: 1px;"></canvas>
+		
+		<input type="text" id="url" autofocus value = "video.com" />
+		<input type="text" id="stream" autofocus value = "101" />
+		<button onclick="setURL()">Set URL</button>
+		<div id="pingLatency" hidden></div>
+		<div id="timeLatency" hidden></div>
+		<div id="quality"></div> 
+		<br />
+		<button onclick="stuff.initOnLoad()" class="big-btn">initOnLoad</button>
+		<button onclick="stuff.connect()" class="big-btn">connect</button>
+		<button onclick="stuff.pause()" class="button big-btn">pause</button>
+		<button onclick="stuff.resume()" class="button big-btn">resume</button>
+		<button onclick="stuff.reconnect()" class="button big-btn">reconnect</button>
+		<button onclick="stuff.disconnect()" class="button big-btn">disconnect</button>
+		<fieldset>
+				<input type="radio" class="radio" name="x" value="a" onclick="handleClick(this);"/>
+				<label for="x">1</label>
+				<input type="radio" class="radio" name="x" value="b" onclick="handleClick(this);"/>
+				<label for="y">2</label>
+				<input type="radio" class="radio" name="x" value="c" onclick="handleClick(this);"/>
+				<label for="z">3</label>
+		</fieldset>
+		<br/>
+		<canvas id="v"  width="640" height="480"  style="border: 1px solid width: 640px; height: 480px;"></canvas>
+		<!-- <canvas id="cvs"  width="450" height="250"  style="border: 1px solid width: 600px; height: 400px;"></canvas> -->
+		
+	</body>
+</html>

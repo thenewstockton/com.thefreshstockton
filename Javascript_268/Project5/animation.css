@@ -1,0 +1,117 @@
+/*
+//index.html
+//Phillip Ko
+//Aug 7, 2016
+//This is a simple 2D catpure game  
+//Hw5. Random. be creative
+	// or make an environment where the user chooses a picture from some UI, and the picture loads in with some animation 
+
+*/
+
+.box
+{
+	width:		30px;
+	height:		30px;
+	border-radius: 50%;
+	background-color: blue;
+	/*transition: width 2s;*/ /*This monitors width*/
+	
+
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	/*transition: left 2s, top 2s;*/
+	/*if top or left is changed, transition happens*/
+
+}
+
+.box1
+{
+	width:		30px;
+	height:		30px;
+	border-radius: 50%;
+	background-color: red;
+	/*transition: width 2s;*/ /*This monitors width*/
+	
+
+	position: absolute;
+	left: 200px;
+	top: 200px;
+	/*transition: left 2s, top 2s;*/
+	/*if top or left is changed, transition happens*/
+
+}
+
+.coin1
+{
+	width:		30px;
+	height:		30px;
+	border-radius: 50%;
+	background-color: yellow;
+	/*transition: width 2s;*/ /*This monitors width*/
+	
+
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	/*transition: left 2s, top 2s;*/
+	/*if top or left is changed, transition happens*/
+
+}
+.coin2
+{
+	width:		30px;
+	height:		30px;
+	border-radius: 50%;
+	background-color: yellow;
+	/*transition: width 2s;*/ /*This monitors width*/
+	
+
+	position: absolute;
+	left: 10px;
+	top: 270px;
+	/*transition: left 2s, top 2s;*/
+	/*if top or left is changed, transition happens*/
+
+}
+.coin3
+{
+	width:		30px;
+	height:		30px;
+	border-radius: 50%;
+	background-color: yellow;
+	/*transition: width 2s;*/ /*This monitors width*/
+	
+
+	position: absolute;
+	left: 270px;
+	top: 10px;
+	/*transition: left 2s, top 2s;*/
+	/*if top or left is changed, transition happens*/
+
+}
+.coin4
+{
+	width:		30px;
+	height:		30px;
+	border-radius: 50%;
+	background-color: yellow;
+	/*transition: width 2s;*/ /*This monitors width*/
+	
+
+	position: absolute;
+	left: 270px;
+	top: 270px;
+	/*transition: left 2s, top 2s;*/
+	/*if top or left is changed, transition happens*/
+
+}
+
+.square 
+{
+    background: #000;
+    width: 295px;
+    height: 295px;
+}
+
+
