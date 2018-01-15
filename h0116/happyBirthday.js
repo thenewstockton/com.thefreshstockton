@@ -15,7 +15,7 @@ demo.happyBirthday.prototype = {
         
         
         text = "雪影:  \n  祝妳生日快樂啊 雖然我們現在已經很久很久沒有講過話了 但我還是會常常想起妳。";
-        text +=  "\n希望妳現在一切都有順心 這個生日禮物希望妳會喜歡瞜XD 哈哈 祝妳生日快樂啦";
+        text +=  "\n希望妳現在一切都順心 這個生日禮物希望妳會喜歡瞜XD 哈哈 祝妳生日快樂啦";
         this.spellOutText(100, 100, window.innerWidth/5, text, 50, 20, '#000', 'Montserrat');
         var cake = game.add.sprite(window.innerWidth/2, window.innerHeight*0.75, 'birthdayCake');
         cake.anchor.setTo(0.5);
